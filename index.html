@@ -1,19 +1,98 @@
 <!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Mi Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 1rem;
+        }
+        nav a {
+            color: white;
+            margin-right: 15px;
+            text-decoration: none;
+        }
+        .seccion {
+            padding: 2rem;
+            margin: 1rem;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        iframe {
+            max-width: 100%;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Mi Sitio Web</h1>
+    <!-- ENCABEZADO -->
+    <header id="inicio">
+        <h1>Bienvenido a Mi Sitio Web</h1>
+        <p>Un proyecto de Git y HTML</p>
     </header>
-    
-    <main>
-        <p>Contenido principal</p>
-    </main>
-    
-    <footer>
-        <p>Pie de página</p>
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#sobre-mi">Sobre Mí</a>
+        <a href="#ubicacion">Ubicación</a>
+        <a href="#video">Video</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <!-- SECCIÓN CON TEXTO Y FOTO -->
+    <section id="sobre-mi" class="seccion">
+        <h2>Sobre Mí</h2>
+        <p>Estoy  aprendiendo Git y HTML. Este proyecto demuestra el uso de repositorios, ramas y elementos multimedia en una página web.</p>
+        <p>Puedes visitar mi perfil de GitHub haciendo <a href="https://github.com" target="_blank">clic aquí</a>.</p>
+    </section>
+
+    <!-- SECCIÓN CON MAPA DE GOOGLE MAPS -->
+    <section id="ubicacion" class="seccion">
+        <h2>Nuestra Ubicación</h2>
+        <p>Nos encontramos en Valencia, España:</p>
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15000.990803384702!2d-0.3524871!3d39.459899!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6048e9d19b4381%3A0x62eb4407a5ebf894!2sCiudad%20de%20las%20Artes%20y%20las%20Ciencias!5e1!3m2!1ses!2ses!4v1760946815196!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>" 
+           
+        </iframe>
+    </section>
+
+    <!-- SECCIÓN CON VIDEO DE YOUTUBE -->
+    <section id="video" class="seccion">
+        <h2>Son ROBOTS </h2>
+        <p>IBAI:</p>
+        <iframe 
+            width="560" height="315" src="https://www.youtube.com/embed/NMEBLMcu1FA?si=EmV6Ti5_T-uAsYfy&t=29"
+title="YouTube video" frameborder="0" allowfullscreen> </iframe>
+            t
+        </iframe>
+    </section>
+
+    <!-- PIE DE PÁGINA -->
+    <footer id="contacto">
+        <p>&copy; 2025 Mi Sitio Web. Todos los derechos reservados.</p>
+        <p>Contacto: <a href=""CARPINTERO MOLLÁ, AARÓN" aarcarmol@alu.edu.gva.es" style="color: #ccc;">info@example.com</a></p>
     </footer>
 </body>
 </html>
